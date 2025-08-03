@@ -1,0 +1,306 @@
+/*
+ * NyxVamp - Obsidian Variant for Safari
+ * A cozy ultra-dark theme inspired by transfem emo aesthetics 🦇💜
+ * Author: zoedsoupe <zoey.spessanha@zeetech.io>
+ * 
+ * The night owl's choice - ultra-dark variant with muted colors
+ */
+
+:root {
+  /* Core palette - ultra dark */
+  --nyxvamp-background: #000A0F;
+  --nyxvamp-foreground: #C0C0CE;
+  --nyxvamp-selection: #2E2E30;
+  --nyxvamp-cursor: #F28FAD;
+  --nyxvamp-cursorline: #1E1E20;
+  
+  /* UI elements - muted for ultra dark */
+  --nyxvamp-border: #5E5A76;
+  --nyxvamp-accent: #F28FAD;
+  --nyxvamp-accent-alt: #F5C2E7;
+  --nyxvamp-muted: #5E5A76;
+  
+  /* Semantic colors - muted variants */
+  --nyxvamp-link: #7FAFD7;
+  --nyxvamp-link-hover: #F28FAD;
+  --nyxvamp-success: #8FBF8F;
+  --nyxvamp-warning: #D5B880;
+  --nyxvamp-error: #D78284;
+  --nyxvamp-info: #7A9CCC;
+  
+  /* Code highlighting - muted for less eye strain */
+  --nyxvamp-comment: #5E5A76;
+  --nyxvamp-string: #8FBF8F;
+  --nyxvamp-number: #D8A080;
+  --nyxvamp-keyword: #F5C2E7;
+  --nyxvamp-function: #7FAFD7;
+  --nyxvamp-variable: #C0C0CE;
+  --nyxvamp-type: #A0A0D0;
+  --nyxvamp-constant: #F28FAD;
+}
+
+/* Global styles */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--nyxvamp-muted) var(--nyxvamp-background);
+}
+
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--nyxvamp-background);
+}
+
+*::-webkit-scrollbar-thumb {
+  background: var(--nyxvamp-muted);
+  border-radius: 4px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: var(--nyxvamp-accent);
+}
+
+/* Page background and text */
+html,
+body {
+  background-color: var(--nyxvamp-background) !important;
+  color: var(--nyxvamp-foreground) !important;
+}
+
+/* Selection */
+::selection {
+  background-color: var(--nyxvamp-selection) !important;
+  color: var(--nyxvamp-foreground) !important;
+}
+
+::-moz-selection {
+  background-color: var(--nyxvamp-selection) !important;
+  color: var(--nyxvamp-foreground) !important;
+}
+
+/* Links */
+a,
+a:link,
+a:visited {
+  color: var(--nyxvamp-link) !important;
+  text-decoration: none !important;
+}
+
+a:hover,
+a:focus {
+  color: var(--nyxvamp-link-hover) !important;
+  text-decoration: underline !important;
+}
+
+/* Headers */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--nyxvamp-accent) !important;
+}
+
+/* Form elements */
+input,
+textarea,
+select,
+button {
+  background-color: var(--nyxvamp-cursorline) !important;
+  color: var(--nyxvamp-foreground) !important;
+  border: 1px solid var(--nyxvamp-border) !important;
+  border-radius: 4px !important;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: var(--nyxvamp-accent) !important;
+  outline: none !important;
+  box-shadow: 0 0 0 2px rgba(242, 143, 173, 0.2) !important;
+}
+
+button {
+  background-color: var(--nyxvamp-accent) !important;
+  color: var(--nyxvamp-background) !important;
+  cursor: pointer !important;
+}
+
+button:hover {
+  background-color: var(--nyxvamp-accent-alt) !important;
+}
+
+/* Code blocks */
+pre,
+code,
+.hljs {
+  background-color: var(--nyxvamp-cursorline) !important;
+  color: var(--nyxvamp-foreground) !important;
+  border: 1px solid var(--nyxvamp-border) !important;
+  border-radius: 4px !important;
+}
+
+/* Syntax highlighting */
+.hljs-comment,
+.hljs-quote {
+  color: var(--nyxvamp-comment) !important;
+  font-style: italic !important;
+}
+
+.hljs-string,
+.hljs-literal {
+  color: var(--nyxvamp-string) !important;
+}
+
+.hljs-number {
+  color: var(--nyxvamp-number) !important;
+}
+
+.hljs-keyword,
+.hljs-selector-tag {
+  color: var(--nyxvamp-keyword) !important;
+  font-weight: bold !important;
+}
+
+.hljs-function,
+.hljs-title {
+  color: var(--nyxvamp-function) !important;
+  font-weight: bold !important;
+}
+
+.hljs-variable,
+.hljs-name {
+  color: var(--nyxvamp-variable) !important;
+}
+
+.hljs-type,
+.hljs-class {
+  color: var(--nyxvamp-type) !important;
+  font-style: italic !important;
+}
+
+.hljs-attr,
+.hljs-attribute {
+  color: var(--nyxvamp-constant) !important;
+}
+
+/* Tables */
+table {
+  background-color: var(--nyxvamp-background) !important;
+  border-collapse: collapse !important;
+}
+
+th,
+td {
+  border: 1px solid var(--nyxvamp-border) !important;
+  padding: 8px !important;
+}
+
+th {
+  background-color: var(--nyxvamp-cursorline) !important;
+  color: var(--nyxvamp-accent) !important;
+  font-weight: bold !important;
+}
+
+/* Alerts and notifications */
+.alert,
+.notification,
+.message {
+  border-radius: 4px !important;
+  padding: 12px !important;
+  margin: 8px 0 !important;
+}
+
+.alert-success,
+.success {
+  background-color: rgba(143, 191, 143, 0.1) !important;
+  border-left: 4px solid var(--nyxvamp-success) !important;
+  color: var(--nyxvamp-success) !important;
+}
+
+.alert-warning,
+.warning {
+  background-color: rgba(213, 184, 128, 0.1) !important;
+  border-left: 4px solid var(--nyxvamp-warning) !important;
+  color: var(--nyxvamp-warning) !important;
+}
+
+.alert-error,
+.error {
+  background-color: rgba(215, 130, 132, 0.1) !important;
+  border-left: 4px solid var(--nyxvamp-error) !important;
+  color: var(--nyxvamp-error) !important;
+}
+
+.alert-info,
+.info {
+  background-color: rgba(122, 156, 204, 0.1) !important;
+  border-left: 4px solid var(--nyxvamp-info) !important;
+  color: var(--nyxvamp-info) !important;
+}
+
+/* Common UI elements */
+.card,
+.panel,
+.box {
+  background-color: var(--nyxvamp-cursorline) !important;
+  border: 1px solid var(--nyxvamp-border) !important;
+  border-radius: 8px !important;
+  color: var(--nyxvamp-foreground) !important;
+}
+
+.sidebar,
+.menu,
+.nav {
+  background-color: var(--nyxvamp-background) !important;
+  border-right: 1px solid var(--nyxvamp-border) !important;
+}
+
+/* Images and media - slightly reduced brightness for ultra-dark theme */
+img {
+  border-radius: 4px !important;
+  opacity: 0.9 !important;
+}
+
+img:hover {
+  opacity: 1 !important;
+}
+
+/* Common dark mode overrides */
+[data-theme="dark"],
+.dark-mode,
+.theme-dark {
+  background-color: var(--nyxvamp-background) !important;
+  color: var(--nyxvamp-foreground) !important;
+}
+
+/* Specific site overrides */
+.markdown-body {
+  background-color: var(--nyxvamp-background) !important;
+  color: var(--nyxvamp-foreground) !important;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  color: var(--nyxvamp-accent) !important;
+  border-bottom-color: var(--nyxvamp-border) !important;
+}
+
+/* Ultra-dark specific adjustments */
+/* Reduce white backgrounds that might be too bright */
+[style*="background-color: white"],
+[style*="background-color: #fff"],
+[style*="background-color: #ffffff"] {
+  background-color: var(--nyxvamp-cursorline) !important;
+}
+
+/* Dim bright elements for comfortable night viewing */
+.highlight,
+.bright,
+[style*="background-color: yellow"] {
+  background-color: rgba(213, 184, 128, 0.2) !important;
+  color: var(--nyxvamp-warning) !important;
+}
