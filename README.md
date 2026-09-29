@@ -10,12 +10,15 @@ a minimalist theme collection, inspired by a blend of gothic and emo aesthetics 
 
 3. **radiance**: light theme optimized for daylight use, ensuring excellent readability.
 
+4. **jhujuba**: pink-tinted mid-dark theme, sweeter than veil.
+
 ## usage
 
 1. download files
    - `nyxvamp-veil.css`
    - `nyxvamp-obsidian.css`  
    - `nyxvamp-radiance.css`
+   - `nyxvamp-jhujuba.css`
 2. install a safari extension
    - [stylish for safari](https://apps.apple.com/us/app/stylish-custom-themes-for-websites/id1448749896)
    - [cascadea](https://apps.apple.com/us/app/cascadea/id1432182561) (premium but more features)
