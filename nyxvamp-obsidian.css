@@ -29,14 +29,14 @@
   --nyxvamp-info: #7A9CCC;
   
   /* Code highlighting - muted for less eye strain */
-  --nyxvamp-comment: #5E5A76;
+  --nyxvamp-comment: #8682A0;
   --nyxvamp-string: #8FBF8F;
   --nyxvamp-number: #D8A080;
   --nyxvamp-keyword: #F5C2E7;
   --nyxvamp-function: #7FAFD7;
   --nyxvamp-variable: #C0C0CE;
   --nyxvamp-type: #A0A0D0;
-  --nyxvamp-constant: #F28FAD;
+  --nyxvamp-constant: #D7BA7D;
 }
 
 /* Global styles */

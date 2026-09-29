@@ -11,18 +11,18 @@
   --nyxvamp-background: #F7F7FF;
   --nyxvamp-foreground: #1E1E2E;
   --nyxvamp-selection: #E8D5FF;
-  --nyxvamp-cursor: #9655FF;
+  --nyxvamp-cursor: #7743CC;
   --nyxvamp-cursorline: #E8E8F0;
   
   /* UI elements */
   --nyxvamp-border: #5A5570;
-  --nyxvamp-accent: #9655FF;
+  --nyxvamp-accent: #7743CC;
   --nyxvamp-accent-alt: #9F1239;
   --nyxvamp-muted: #5A5570;
   
   /* Semantic colors */
   --nyxvamp-link: #005F87;
-  --nyxvamp-link-hover: #9655FF;
+  --nyxvamp-link-hover: #7743CC;
   --nyxvamp-success: #22C55E;
   --nyxvamp-warning: #F59E0B;
   --nyxvamp-error: #EF4444;
@@ -30,12 +30,12 @@
   
   /* Code highlighting - high contrast for light theme */
   --nyxvamp-comment: #5A5570;
-  --nyxvamp-string: #B8860B;
+  --nyxvamp-string: #825B00;
   --nyxvamp-number: #C2410C;
-  --nyxvamp-keyword: #9655FF;
+  --nyxvamp-keyword: #7743CC;
   --nyxvamp-function: #005F87;
   --nyxvamp-variable: #1E1E2E;
-  --nyxvamp-type: #6B46C1;
+  --nyxvamp-type: #4657BD;
   --nyxvamp-constant: #9F1239;
 }
 
@@ -116,7 +116,7 @@ textarea:focus,
 select:focus {
   border-color: var(--nyxvamp-accent) !important;
   outline: none !important;
-  box-shadow: 0 0 0 2px rgba(150, 85, 255, 0.2) !important;
+  box-shadow: 0 0 0 2px rgba(119, 67, 204, 0.2) !important;
 }
 
 button {
@@ -300,7 +300,7 @@ img {
 
 .markdown-body blockquote {
   border-left: 4px solid var(--nyxvamp-accent) !important;
-  background-color: rgba(150, 85, 255, 0.05) !important;
+  background-color: rgba(119, 67, 204, 0.05) !important;
   color: var(--nyxvamp-foreground) !important;
 }
 
